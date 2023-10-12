@@ -35,31 +35,32 @@
                 <i class="nav_enlace_icon fs-4 d-lg-none fa-solid fa-bars text-white"></i>
             </div>
 
-            <div class="nav__enlaces d-flex flex-column flex-lg-row text-light">
-                <a class="nav__enlace text-light text-decoration-none me-md-5" href="#inicio">Inicio</a>
-                <a class="nav__enlace text-light text-decoration-none me-md-5" href="#acercade">Acerca de mi</a>
-                <a class="nav__enlace text-light text-decoration-none me-md-5" href="#habilidades">Habilidades</a>
-                <a class="nav__enlace text-light text-decoration-none me-md-5" href="#experiencia">Experiencia</a>
-                <a class="nav__enlace text-light text-decoration-none" href="#contacto">Contacto</a>
-            </div>
-        
-            <!-- Agrega el siguiente script JavaScript para cerrar la barra de navegación al hacer clic en un enlace -->
-            <script>
-                // Función para cerrar la barra de navegación
-                function closeNavbar() {
-                    // Encuentra el elemento que representa la barra de navegación y ciérralo
-                    var navbar = document.querySelector('.navbar-collapse');
-                    if (navbar) {
-                        navbar.classList.remove('show');
-                    }
-                }
-        
-                // Agrega un evento de clic a todos los enlaces con la clase "nav__enlace"
-                var enlaces = document.querySelectorAll('.nav__enlace');
-                enlaces.forEach(function(enlace) {
-                    enlace.addEventListener('click', closeNavbar);
-                });
-            </script>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#inicio" data-bs-toggle="collapse">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#acercade" data-bs-toggle="collapse">Acerca de mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#habilidades" data-bs-toggle="collapse">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experiencia" data-bs-toggle="collapse">Experiencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto" data-bs-toggle="collapse">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </nav>
 
