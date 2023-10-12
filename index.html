@@ -42,6 +42,24 @@
                 <a class="nav__enlace text-light text-decoration-none me-md-5" href="#experiencia">Experiencia</a>
                 <a class="nav__enlace text-light text-decoration-none" href="#contacto">Contacto</a>
             </div>
+        
+            <!-- Agrega el siguiente script JavaScript para cerrar la barra de navegación al hacer clic en un enlace -->
+            <script>
+                // Función para cerrar la barra de navegación
+                function closeNavbar() {
+                    // Encuentra el elemento que representa la barra de navegación y ciérralo
+                    var navbar = document.querySelector('.navbar-collapse');
+                    if (navbar) {
+                        navbar.classList.remove('show');
+                    }
+                }
+        
+                // Agrega un evento de clic a todos los enlaces con la clase "nav__enlace"
+                var enlaces = document.querySelectorAll('.nav__enlace');
+                enlaces.forEach(function(enlace) {
+                    enlace.addEventListener('click', closeNavbar);
+                });
+            </script>
         </div>
     </nav>
 
